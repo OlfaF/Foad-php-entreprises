@@ -5,7 +5,7 @@ require dirname(__DIR__) . '/connexiondb.php';
 $idSuppEmployes = $_GET['id'] ?? null;
 
 if (! is_numeric($idSuppEmployes)  ) {
-    dd("Cette conference n'existe pas !!!");
+    dd("Cet employé a été effacé !");
 }
 
 $suppResultEmployes=supprimerEmployes($pdo,$idSuppEmployes);

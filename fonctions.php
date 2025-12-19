@@ -26,7 +26,7 @@ function dd($data)
 // === Employes ===
 // ==================
 
-function listeremployes($pdo)
+function listerEmployes($pdo)
 {
     $sql = "SELECT * FROM employes ORDER BY id_employes DESC";
     $stmt = $pdo->prepare($sql);

@@ -21,14 +21,14 @@ require PATH_PROJET . '/views/partials/header.php'; ?>
             </div> 
              <div>
                 <label for="date_embauche">Date_embauche</label>
-                <input type="text" name="service" value="<?= $employes['date_embauche']; ?>"  required>
+                <input type="text" name="date_embauche" value="<?= $employes['date_embauche']; ?>"  required>
             </div>
              <div>
                 <label for="salaire">Salaire</label>
                 <input type="text" name="salaire" value="<?= $employes['salaire']; ?>"  required>
             </div>        
             <div>
-                <button type="submit" name="envoyer">Editer employes</button>
+                <button type="submit" name="submit">Editer employes</button>
             </div>               
         </form>
 <?php require PATH_PROJET . '/views/partials/footer.php'; ?>

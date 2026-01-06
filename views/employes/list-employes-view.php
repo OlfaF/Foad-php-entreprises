@@ -20,9 +20,14 @@ endif;
             <th>service</th>
             <th>date_embauche</th>
             <th>salaire</th>
+            <th>Actions</th>
     </thead>
     <tbody>
-     <?php foreach ($employesArray as $employe) : ?>
+
+
+     <?php // dd($employesArray );
+     
+     foreach ($employesArray as $employe) : ?>
 <tr>
     <td><?= $employe['id_employes'] ?? ''; ?></td>
     <td><?= $employe['nom'] ?? ''; ?></td>

@@ -10,7 +10,7 @@ if (!is_numeric($idEditEmployes)) {
 
 $employes = getEmployes($pdo, $idEditEmployes);
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['envoyer'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 
     $prenom        = nettoyer($_POST['prenom']);
     $nom           = nettoyer($_POST['nom']);
@@ -30,7 +30,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['envoyer'])) {
         $idEditEmployes
     );
 
-    redirect('/employes/list-employes.php');
+   redirect('/employes/list-employes.php');
+}
+
+else {
+dg('test');
+
 }
 
 include PATH_PROJET . '/views/employes/edit-employes-view.php';

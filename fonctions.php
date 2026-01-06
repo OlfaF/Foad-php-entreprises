@@ -70,6 +70,7 @@ function updateEmployes($pdo, $prenomParam, $nomParam, $sexeParam, $serviceParam
         ':sexe'         => $sexeParam,
         ':service'       => $serviceParam,
         ':date_embauche' => $date_embaucheParam,
+        ':salaire' => $salaireParam,
         ':id'            => $idParam
     ]);
     return $updateBool;

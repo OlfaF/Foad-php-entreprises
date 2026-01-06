@@ -1,5 +1,5 @@
 <?php 
-$titleTaxis = "Edition d'un employes";
+$titleEmployes = "Edition d'un employes";
 require PATH_PROJET . '/views/partials/header.php'; ?>
         <h1>Editer un employes</h1>
         <form action="?id=<?= $employes['id_employes']; ?>" method="POST">

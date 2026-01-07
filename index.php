@@ -1,13 +1,12 @@
-<?php 
-include 'fonctions.php';
-require 'connexiondb.php'; 
+<?php
+include "fonctions.php";
+require "connexiondb.php";
+require "routes.php";
 
-$titleEmployes = "Page d'accueil";
+$page = filter_input(INPUT_GET, 'page', FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?? 'home';
 
-require PATH_PROJET . '/views/partials/header.php';
-?>
+if (!array_key_exists($page, $routes)) {
+    redirect('404.php');
+}
 
-<p>Nombre d'employes: <?= getNbLigneTable($pdo,'employes') ?></p>
-
-
-<?php require PATH_PROJET . '/views/partials/footer.php';  ?>
+redirect($routes[$page]);

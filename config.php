@@ -1,9 +1,9 @@
 <?php
 
 $config = [
-    'host'    => 'localhost',
+    'host'    => 'db',
     'db'      => 'entreprises',
     'user'    => 'root',
-    'pass'    => '',
+    'pass'    => 'root',
     'charset' => 'utf8mb4'
 ];

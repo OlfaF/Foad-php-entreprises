@@ -2,8 +2,8 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-define("PATH_PROJET", $_SERVER['DOCUMENT_ROOT']  . "/foad-php-entreprise");
-define("WEB_ROOT", "/foad-php-entreprise");
+define("PATH_PROJET", $_SERVER['DOCUMENT_ROOT']  . "/php-entreprise");
+define("WEB_ROOT", "/php-entreprise");
 
 
 
